@@ -1,0 +1,201 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    /* color: #111111; */
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+a {
+    color: #000;
+}
+
+nav {
+    width: 100%;
+    height: 65px;
+    border-bottom: rgba(0, 0, 0, 0.2) 1px solid;
+}
+
+nav div {
+    width: 70%;
+    height: inherit;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+nav div ul, nav div form, nav a {
+    text-transform: uppercase;
+    margin: auto 0;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav form {
+    display: flex;
+    outline: 0;
+    border: 0;
+}
+
+nav form input {
+    outline: 0;
+    border: rgba(0, 0, 0, 0.2) 1px solid;
+    height: 30px;
+    width: 200px;
+}
+
+nav form button {
+    outline: 0;
+    border: rgba(0, 0, 0, 0.2) 1px solid;
+    height: 30px;
+    width: 70px;
+    color: #fff;
+    background-color: green;
+    border-radius: 0 5px 5px 0;
+}
+
+.logo {
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 2px;
+    line-height: 17px;
+}
+
+.search, input {
+    letter-spacing: 0;
+}
+
+.main-wrapper {
+    width: 80%;
+    margin: 50px auto;
+    border-radius: 10px;
+    border: rgba(0, 0, 0, 0.2) 1px solid;
+    height: ;
+}
+
+.welcome {
+    text-align: center;
+    color: rgba(0, 0, 0, 0.6);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    letter-spacing: 1px;
+    font-size: 15px;
+    margin: 5px 0;
+}
+
+.to-insert {
+    width: 99%;
+    border-radius: 0 0 12px 12px;
+    border: rgba(0, 0, 0, 0.2) 1px solid;
+    margin: 0 auto 5px;
+    padding: 10px 10px;
+}
+
+.first-seen {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.reg-button {
+    outline: 0;
+    border: rgba(0, 0, 0, 0.2) 1px solid;
+    height: 30px;
+    width: fit-content;
+    color: #fff;
+    background-color: green;
+    border-radius: 5px;
+    padding: 0 5px;
+}
+
+#product_form {
+    display: none;
+}
+
+.customer-dsp {
+    margin-bottom: 10px;
+}
+
+.cus-entry {
+    width: 25%;
+    height: 30vh;
+    margin: 50px auto;
+    background-color: rgb(5, 197, 46);
+    border-radius: 10px 10px 0 0;
+    /* border: blue 1px solid; */
+}
+
+.cus-entry div {
+    background-color: #fff;
+    height: inherit;
+    width: 100%;
+    border: rgba(0, 0, 0, 0.2) 1px solid;
+    border-radius:  0 0 10px 10px;
+}
+
+.cus-entry p {
+    text-align: center;
+}
+
+.cus-entry input {
+    width: 70%;
+    text-align: center;
+    height: 28px;
+    margin: 20px 0 7px 15%;
+    font-size: 25px;
+}
+
+.cus-entry input::placeholder {
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.1);
+}
+
+.cus-entry .l {
+    color: rgba(225, 225, 225, 0.9);
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    line-height: 40px;
+    letter-spacing: 0.5px;
+}
+
+.cus-entry .v {
+    font-size: 13px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.receipt {
+    width: 40%;
+    height: 50vh;
+    border: 1px #000 solid;
+    margin: 50px auto;
+}
+
+.form input {
+    display: block;
+    margin: 10px auto 0;
+    width: 300px;
+    height: 50px;
+}
+
+.form p {
+    text-align: center;
+}
+
+.form button {
+    width: 300px;
+    margin: 10px 123px 0;
+}
+
+.form {
+    width: 40%;
+    margin: 100px 30%;
+}
+
+a {
+    text-decoration: none;
+}

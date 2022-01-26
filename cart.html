@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div>
+                <a href="customers.html" class="logo"><b>Gallant<br>Inventory</b><br>System</a>
+                <a href="customers.html" class="logo"><b>Home</b></a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="main-wrapper" id="to_hide">
+            <h2 class="welcome">This Are Items you have Purchased!</h2>
+            <table class="table table-striped table-hover">
+                <thead>
+                    <tr>
+                        <th>S/N</th>
+                        <th>Username</th>
+                        <th>Product</th>
+                        <th>Qty Bought</th>
+                        <th>Amount to Pay($)</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id='cart_show'></tbody>
+            </table>
+        </div>
+        <div class="col-4 offset-4" style="display: none; margin-top: 100px ;" id="formDiv">
+            <p>Fil the following;</p>
+            <input type="text" id="fulname" class="form-control" placeholder="Full Name (surname first)">
+            <input type="text" id="phone" class="form-control" placeholder="Phone">
+            <input type="text" id="addr" class="form-control" placeholder="Address">
+            <button class="btn btn-success" style="margin: 10px auto;" onclick="print_it()">Generate Receipt</button>
+        </div>
+        <table class="receipt" style="display: none;" id="receiptTable">
+            <tr>
+                <th>Gallant Sales Plc</th>
+            </tr>
+            <tr>
+                <td id="nname">Name:</td>
+            </tr>
+            <tr>
+                <td id="ptel">Phone:</td>
+            </tr>
+            <tr>
+                <td id="ress">Address:</td>
+            </tr>
+            <tr>
+                <td id="dbut">Date Bought:</td>
+            </tr>
+            <tr>
+                <td id="pbut">Product Bought:</td>
+            </tr>
+            <tr>
+                <td id="qbut">Quantity Bought:</td>
+            </tr>
+            <tr>
+                <td id="paid">Amount Paid:</td>
+            </tr>
+        </table>
+    </main>
+    <footer></footer>
+    <script src="cart.js"></script>
+</body>

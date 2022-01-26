@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div>
+                <a href="customers.html" class="logo"><b>Gallant<br>Inventory</b><br>System</a>
+                <a href="cart.html" class="logo" id="lin"></a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="row" id="close1">
+            <div class="col-3 offset-4" style="padding: 0; border-radius: 15px;">
+                <div class="container bg-light">
+                    <p class="navbar-brand">Gallant</p>
+                </div>
+                <div>
+                    <input class="form-control ml-5" type="text" id="iin" maxlength="15" placeholder="username" style="width: 60%;">
+                    <!-- <input type="text" maxlength="15" placeholder="Phone No" id="iin2"> -->
+                    <div style="width: 70%; margin-top: 10px;" class="ml-5">
+                        <p style="line-height: 15px;">
+                            you are welcome to our business website, it's nice to have you buy with us
+                        </p>
+                    </div>
+                    <button class="btn btn-success ml-5" onclick="next()">Start Shopping</button>
+                </div>
+            </div>
+        </div>
+    
+        <div class="main-wrapper" id="nex" style="display: none;">
+            <h2 class="welcome">Welcome To Gallant Sales System!</h2>
+            <table class="table table-striped table-hover">
+                <thead>
+                    <tr>
+                        <th>S/N</th>
+                        <th>Product</th>
+                        <th>Price($)</th>
+                        <th>Qty in Stock</th>
+                        <th>Enter quantity</th>
+                        <th>product Image</th>
+                        <th>Amount to($)</th>
+                    </tr>
+                </thead>
+                <tbody id='cus_show'></tbody>
+            </table>
+            <p id="total_amnt" class="" style="text-align: center;">Total Amount: $</p>
+            <button class="btn btn-success justify-content-end" style="margin: 10px 40%;" onclick="register()">CHECKOUT</button>
+        </div>
+    </main>
+    <footer></footer>
+    <script src="customers.js"></script>
+</body>

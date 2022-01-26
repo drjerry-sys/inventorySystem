@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div>
+                <a href="index.html" class="logo"><b>Gallant<br>Inventory</b><br>System</a>
+                <a href="customers.html" target="_blank" class="logo"><b>customers</b></a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="main-wrapper">
+            <h2 class="welcome">Welcome To Gallant Inventory System!</h2>
+            <div class="to-insert">
+                <div class="first-seen" id="reg_div">
+                    <h2 class="welcome">Register Products</h2>
+                    <button class="reg-button" onclick="register()">REGISTER</button>
+                </div>
+                <div class="" id="product_form">
+                    <label for="">Add Product:</label>
+                    <input type="text" placeholder="product name" id="pname">
+                    <input type="decimal" placeholder="price" id="pprice">
+                    <input type="number" placeholder="quantity" id="pquan">
+                    <input type="file" placeholder="image" id="pimage">
+                    <button class="reg-button" onclick="add_product()">Add to Product</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+    <script src="index.js"></script>
+</body>
+</html>
